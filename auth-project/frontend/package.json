@@ -11,9 +11,10 @@
     "serve": "^14.2.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
-  },
+  "start": "serve -s build -l $PORT",
+  "build": "react-scripts build",
+  "dev": "react-scripts start"
+},
   "proxy": "http://localhost:5000",
   "browserslist": {
     "production": [
